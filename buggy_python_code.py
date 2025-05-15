@@ -9,7 +9,7 @@ def index():
     version = flask.request.args.get("urllib_version")
     url = flask.request.args.get("url")
     return fetch_website(version, url)
-  
+
 CONFIG = {"API_KEY": "771df488714111d39138eb60df756e6b"}
 class Person(object):
     def __init__(self, name):
@@ -55,5 +55,5 @@ if __name__ == '__main__':
         load_yaml(input("File name: "))
         print("Executed -ls on current folder")
     elif choice == "4":
-        password = input("Enter master password: ")
-        authenticate(password)
+        PASSWORD = input("Enter master password: ")
+        authenticate(PASSWORD)
