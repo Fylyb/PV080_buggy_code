@@ -15,10 +15,8 @@ class Person(object):
     def __init__(self, name):
         self.name = name
 
-
 def print_nametag(format_string, person):
     print(format_string.format(person=person))
-
 
 def fetch_website(urllib_version, url):
     # Import the requested version (2 or 3) of urllib
@@ -29,7 +27,6 @@ def fetch_website(urllib_version, url):
         r = http.request('GET', url)
     except:
         print('Exception')
-
 
 def load_yaml(filename):
     stream = open(filename)
